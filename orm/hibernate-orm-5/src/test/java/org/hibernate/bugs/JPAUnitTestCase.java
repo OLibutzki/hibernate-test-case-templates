@@ -32,7 +32,7 @@ public class JPAUnitTestCase {
 	// Entities are auto-discovered, so just add them anywhere on class-path
 	// Add your tests, using standard JUnit.
 	@Test
-	public void hhh123Test() throws Exception {
+	public void hhh12786Test() throws Exception {
 		final EntityManager entityManager = entityManagerFactory.createEntityManager();
 		{
 			entityManager.getTransaction().begin();
