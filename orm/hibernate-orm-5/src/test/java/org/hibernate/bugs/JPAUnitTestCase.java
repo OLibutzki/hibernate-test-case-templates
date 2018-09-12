@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import org.hibernate.bugs.entity.Book;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,9 +30,11 @@ public class JPAUnitTestCase {
 	// Add your tests, using standard JUnit.
 	@Test
 	public void hhh123Test() throws Exception {
+		
+		
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		entityManager.getTransaction().begin();
-		// Do stuff...
+		
 		entityManager.getTransaction().commit();
 		entityManager.close();
 	}
